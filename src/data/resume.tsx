@@ -144,12 +144,28 @@ export const DATA = {
       end: "2026",
     },
     {
+      school: "Amazon Web Services (AWS)",
+      href: "https://aws.amazon.com/pt/certification/certified-cloud-practitioner/",
+      degree: "Certified Cloud Practitioner",
+      logoUrl: "/aws.png",
+      start: "2024",
+      end: "2025",
+    },
+    {
       school: "Universidade Federal do Rio Grande do Norte (UFRN) & Instituto Metrópole Digital (IMD)",
       href: "https://ufrn.br/",
       degree: "Técnico em Redes de Computadores",
       logoUrl: "/ufrn.png",
       start: "2020",
       end: "2023",
+    },
+    {
+      school: "Instituto Metrópole Digital (IMD)",
+      href: "https://www.metropoledigital.ufrn.br/portal/",
+      degree: "Curso de Extensão em Desenvolvimento de Jogos Digitais (360h)",
+      logoUrl: "/imd.jpg",
+      start: "2020",
+      end: "2021",
     },
   ],
   projects: [
@@ -207,6 +223,55 @@ export const DATA = {
         },
       ],
       image: "/fipex.png",
+      video: "",
+    },
+    {
+      title: "Em breve: Barbernow",
+      href: "#",
+      dates: "Fevereiro 2025 - Present",
+      active: true,
+      description:
+        "Barbernow é um app de agendamento de serviços de barbearia desenvolvido em Next.js, com backend em Spring Boot e banco de dados PostgreSQL. O aplicativo permite que os usuários agendem horários, visualizem serviços disponíveis e recebam notificações de confirmação.",
+      technologies: [
+        "Next.js",
+        "React",
+        "PostgreSQL",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Spring Boot",
+        "Brasil API",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Em breve: Pokedex",
+      href: "#",
+      dates: "Março 2024",
+      active: true,
+      description:
+        "Além do 'Hello World', todo dev em algum momento também cria sua própria Pokedex. Comigo não foi diferente e aqui está a minha versão. A aplicação web permite que os usuários pesquisem pokémons, visualizem suas características, evoluções e designs, tudo isso consumindo dados da PokeAPI.",
+      technologies: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "PokeAPI",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
       video: "",
     },
     

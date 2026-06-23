@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { DATA } from "@/data/resume";
 
@@ -25,14 +24,12 @@ export default function ContactSection() {
         </h2>
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
           Quer conversar? Mande-me uma mensagem {" "}
-          <Link
-            href={DATA.contact.social.Email.url}
-            target="_blank"
-            rel="noopener noreferrer"
+          <a
+            href={`mailto:${DATA.contact.email}`}
             className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
             com uma pergunta direta no email
-          </Link>{" "}
+          </a>{" "}
           e eu responderei o mais breve possível. Estou sempre aberto a discutir novas oportunidades, projetos interessantes ou simplesmente trocar ideias sobre tecnologia e desenvolvimento de software.
         </p>
       </div>
