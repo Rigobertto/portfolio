@@ -228,6 +228,7 @@ export const DATA = {
         "Next.js",
         "React",
         "PostgreSQL",
+        "Spring Boot",
         "TailwindCSS",
         "Shadcn UI",
         "Ant Design UI",
