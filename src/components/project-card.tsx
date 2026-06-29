@@ -69,14 +69,28 @@ export function ProjectCard({
           className="block"
         >
           {video ? (
-            <video
-              src={video}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-48 object-cover"
-            />
+            video.includes("youtube.com") || video.includes("youtu.be") ? (
+              <iframe
+                src={video.includes("youtube.com/watch?v=") 
+                  ? video.replace("watch?v=", "embed/") 
+                  : video.includes("youtu.be/") 
+                    ? video.replace("youtu.be/", "www.youtube.com/embed/") 
+                    : video}
+                title={title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-48 object-cover border-0"
+              />
+            ) : (
+              <video
+                src={video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-48 object-cover"
+              />
+            )
           ) : image ? (
             <ProjectImage src={image} alt={title} />
           ) : (

@@ -35,7 +35,7 @@ export const DATA = {
     { name: "Typescript", icon: Typescript },
     { name: "Node.js", icon: Nodejs },
     { name: "Java", icon: Java },
-    { name: "Spring Boot", icon: Spring},
+    { name: "Spring Boot", icon: Spring },
     { name: "PHP", icon: Php },
     { name: "Laravel", icon: Laravel },
     { name: "Postgres", icon: Postgresql },
@@ -102,12 +102,12 @@ export const DATA = {
       href: "https://lemarq.com.br/",
       badges: [],
       location: "Presencial - Mossoró, RN",
-      title: "Desenvolvedor de Software",
+      title: "Engenheiro de Software",
       logoUrl: "/lemarq.jpg",
       start: "Abril 2024",
       end: "Abril 2026",
       description:
-        "Atuação no desenvolvimento e evolução de sistemas ERP e PDV para os segmentos de indústria e comércio utilizando Laravel e Filament. Responsável pela implementação de módulos fiscais complexos (NF-e/NFS-e), integração com APIs bancárias do Santander para pagamentos via Pix e boleto, além da otimização de consultas SQL e deploy em ambientes Linux AWS EC2 utilizando Docker sob metodologias ágeis.",
+        "Atuação na engenharia de software de sistemas ERP e PDV para os segmentos de indústria e comércio. Responsável pela implementação de módulos fiscais (NF-e/NFS-e), integração com APIs bancárias do Santander para pagamentos via Pix e boleto, além da otimização de consultas SQL e deploy em ambientes Linux AWS EC2 utilizando Docker sob metodologias ágeis.",
     },
     {
       company: "Compass UOL",
@@ -195,12 +195,35 @@ export const DATA = {
         "",
     },
     {
+      title: "SIGEP API",
+      href: "https://github.com/Rigobertto/sigep",
+      dates: "Junho 2025",
+      active: true,
+      description:
+        "Esta é uma API desenvolvida para realizar o processamento e a importação de planilhas de dados (CSV) da ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis), mais especificamente a tabela de Poços Perfurados no País, e disponibilizá-los em formato JSON através de endpoints REST. A ideia surgiu ao identificar a ausência de uma API ou ferramenta que fornecesse esses dados em um formato adequado para integração com sistemas, dashboards e soluções de monitoramento. Futuramente, a API será expandida para incluir outras bases de dados públicas da ANP.",
+      technologies: [
+        "Spring Boot",
+        "PostgreSQL",
+        "Java",
+        "Maven",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Rigobertto/sigep",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/anp.png",
+      video: "",
+    },
+    {
       title: "FIPEX",
       href: "https://fipex-gamma.vercel.app/",
       dates: "Setembro 2025 - Presente",
       active: true,
       description:
-        "FIPEX é uma aplicação web desenvolvida em React + Next.js que permite analisar preços de veículos utilizando dados da Tabela FIPE. O sistema conta com cálculo das medidas de dispersão e gráficos estatísticos (Boxplot e Histograma) para facilitar a visualização da dispersão e distribuição dos valores da amostra.",
+        "FIPEX é uma aplicação web desenvolvida em React + Next.js que permite analisar preços de veículos utilizando dados da Tabela FIPE. O sistema conta com cálculo das medidas de dispersão e gráficos estatísticos (Boxplot e Histograma). Este projeto surgiu quando estava na faculdade e meu professor de estatística pediu que implementássemos as medidas de dispersão em algum projeto web. Atualmente ele ainda está em fase de melhorias para a publicação de um artigo em uma revista ciêntifica. ",
       technologies: [
         "Next.js",
         "React",
@@ -224,6 +247,54 @@ export const DATA = {
       ],
       image: "/fipex.png",
       video: "",
+    },
+
+    {
+      title: "Pokedex",
+      href: "https://github.com/Rigobertto/pokedex",
+      dates: "Março 2024",
+      active: true,
+      description:
+        "Além do 'Hello World', todo dev em algum momento também cria sua própria Pokedex. Comigo não foi diferente e aqui está a minha versão. A aplicação web permite que os usuários pesquisem pokémons, visualizem suas características, evoluções e designs, tudo isso consumindo dados da PokeAPI.",
+      technologies: [
+        "React",
+        "NextJs",
+        "Typescript",
+        "TailwindCSS",
+        "PokeAPI",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Rigobertto/pokedex",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/pokemon.mp4",
+    },
+    {
+      title: "Landing Page para Advogados",
+      href: "https://github.com/Rigobertto/landing-page-adv",
+      dates: "Dezembro 2025",
+      active: true,
+      description:
+        "Este projeto surgiu quando uma ex colega da Defensoria Pública me pediu ajuda para criar uma landing page que apresentasse seu trabalho como advogada, eu prontamente atendi e juntos desenvolvemos esse layout.",
+      technologies: [
+        "NextJs",
+        "Shadcn UI",
+        "React",
+        "Typescript",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Rigobertto/landing-page-adv",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "https://youtu.be/fsBdbVYLf1w",
     },
     {
       title: "Em breve: Barbernow",
@@ -249,35 +320,13 @@ export const DATA = {
         },
       ],
       image: "",
+      // video: "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
       video: "",
     },
-    {
-      title: "Em breve: Pokedex",
-      href: "#",
-      dates: "Março 2024",
-      active: true,
-      description:
-        "Além do 'Hello World', todo dev em algum momento também cria sua própria Pokedex. Comigo não foi diferente e aqui está a minha versão. A aplicação web permite que os usuários pesquisem pokémons, visualizem suas características, evoluções e designs, tudo isso consumindo dados da PokeAPI.",
-      technologies: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "PokeAPI",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    
+
   ],
   hackathons: [
-    
+
     {
       title: "Make School's Student App Competition 2017",
       dates: "May 19th - 21st, 2017",
@@ -309,6 +358,6 @@ export const DATA = {
         },
       ],
     },
-    
+
   ],
 } as const;

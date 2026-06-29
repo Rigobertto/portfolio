@@ -32,7 +32,11 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
 
 export default function WorkSection() {
   return (
-    <Accordion type="single" collapsible className="w-full grid gap-6">
+    <Accordion 
+      type="multiple" 
+      defaultValue={DATA.work.map((work) => work.company)} 
+      className="w-full grid gap-6"
+    >
       {DATA.work.map((work) => (
         <AccordionItem
           key={work.company}
