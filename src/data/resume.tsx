@@ -191,8 +191,7 @@ export const DATA = {
         },
       ],
       image: "/essencialix.png",
-      video:
-        "",
+      video: "https://youtu.be/rd2HTCoxobs",
     },
     {
       title: "SIGEP API",
