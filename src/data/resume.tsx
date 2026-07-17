@@ -46,7 +46,9 @@ export const DATA = {
   ],
   apis: [
     { name: "Santander Pagamentos", icon: '' },
-    { name: "Integra Notas API", icon: '' },
+    { name: "TecnoSpeed", icon: '' },
+    { name: "Integra Notas", icon: '' },
+    { name: "AwesomeAPI", icon: '' },
     { name: "Brasil API", icon: '' },
     { name: "FIPE API", icon: '' },
     { name: "PokeAPI", icon: '' },
@@ -102,7 +104,7 @@ export const DATA = {
       href: "https://lemarq.com.br/",
       badges: [],
       location: "Presencial - Mossoró, RN",
-      title: "Engenheiro de Software",
+      title: "Desenvolvedor Pleno I",
       logoUrl: "/lemarq.jpg",
       start: "Abril 2024",
       end: "Abril 2026",
@@ -172,10 +174,10 @@ export const DATA = {
     {
       title: "Essencialix",
       href: "https://homolog.essencialix.starfalltech.cloud/",
-      dates: "Jan 2026 - Presente",
+      dates: "Janeiro 2026",
       active: true,
       description:
-        "A aplicação foi criada com a ideia de atender pequenos empreendimentos que precisam de um controle de vendas, estoque e etiquetas de produtos em uma única plataforma. Além de relatórios e dashboard que oferecem insights valiosos sobre o desempenho do negócio.",
+        "A aplicação foi criada com a ideia de atender pequenos empreendimentos que precisam controlar vendas, fluxo de caixa, estoque e etiquetas de produtos em uma única plataforma. Além de relatórios e dashboard que oferecem insights valiosos sobre o desempenho do negócio. O Essencialix já está em produção com 2 clientes ativos no Rio Grande do Norte.",
       technologies: [
         "PHP",
         "Laravel",
@@ -219,7 +221,7 @@ export const DATA = {
     {
       title: "FIPEX",
       href: "https://fipex-gamma.vercel.app/",
-      dates: "Setembro 2025 - Presente",
+      dates: "Setembro 2025",
       active: true,
       description:
         "FIPEX é uma aplicação web desenvolvida em React + Next.js que permite analisar preços de veículos utilizando dados da Tabela FIPE. O sistema conta com cálculo das medidas de dispersão e gráficos estatísticos (Boxplot e Histograma). Este projeto surgiu quando estava na faculdade e meu professor de estatística pediu que implementássemos as medidas de dispersão em algum projeto web. Atualmente ele ainda está em fase de melhorias para a publicação de um artigo em uma revista ciêntifica. ",
@@ -247,6 +249,33 @@ export const DATA = {
       ],
       image: "/fipex.png",
       video: "",
+    },
+
+    {
+      title: "Cotando App",
+      href: "https://github.com/Rigobertto/cotando",
+      dates: "Dezembro 2024",
+      active: true,
+      description:
+        "Cotando é um Dashboard financeiro que exibe cotações de moedas em tempo real. O sistema consome dados de uma API externa (AwesomeAPI), que possibilita exibir as taxas de câmbio atuais, histórico de fechamento em gráficos interativos, alertas de mercado e um conversor entre moedas.",
+      technologies: [
+        "Spring Boot",
+        "PostgreSQL",
+        "Java",
+        "Maven",
+        "Thymeleaf",
+        "Tailwind CSS",
+        "AwesomeAPI",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Rigobertto/cotando",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/cotando.mp4",
     },
 
     {
