@@ -184,6 +184,7 @@ export const DATA = {
         "PostgreSQL",
         "Flux UI",
         "Docker",
+        "Inteligência Artificial Integrada"
       ],
       links: [
         {
@@ -193,7 +194,30 @@ export const DATA = {
         },
       ],
       image: "/essencialix.png",
-      video: "https://youtu.be/rd2HTCoxobs",
+      video: "https://youtu.be/dZw1SWhX9q0",
+    },
+    {
+      title: "Doc Intelligence API",
+      href: "https://github.com/Rigobertto/doc-intelligence",
+      dates: "Julho 2026",
+      active: true,
+      description:
+        "Uma API em Laravel focada em automação documental com IA. Ela recebe uploads de PDFs e PNGs de forma assíncrona, extrai metadados estruturados em JSON e renomeia arquivos de forma inteligente. Com fluxos automatizados de falha, análise de grau de confiança (confidence level) e suporte a revisões humanas, o sistema garante alta precisão e segurança no processamento de informações.",
+      technologies: [
+        "PHP",
+        "Laravel",
+        "PostgreSQL",
+        "Inteligência Artificial da Nvidia",
+        "Queue job",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/Rigobertto/doc-intelligence",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/doc-intelligence.png",
     },
     {
       title: "SIGEP API",
