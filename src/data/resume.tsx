@@ -218,6 +218,7 @@ export const DATA = {
         },
       ],
       image: "/doc-intelligence.png",
+      video: "",
     },
     {
       title: "SIGEP API",
