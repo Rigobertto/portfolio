@@ -4,18 +4,23 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { paginate, normalizePage } from "@/lib/pagination";
 import { ChevronRight } from "lucide-react";
+import { DATA } from "@/data/resume";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Thoughts on software development, life, and more.",
+  description: "Minhas reflexões sobre desenvolvimento de software, vida e muito mais.",
   openGraph: {
-    title: "Blog",
-    description: "Thoughts on software development, life, and more.",
+    title: `Blog | ${DATA.name}`,
+    description: "Minhas reflexões sobre desenvolvimento de software, vida e muito mais.",
+    url: `${DATA.url}/blog`,
+    siteName: DATA.name,
+    locale: "pt_BR",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog",
-    description: "Thoughts on software development, life, and more.",
+    title: `Blog | ${DATA.name}`,
+    description: "Minhas reflexões sobre desenvolvimento de software, vida e muito mais.",
   },
 };
 

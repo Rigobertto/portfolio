@@ -32,8 +32,17 @@ export const metadata: Metadata = {
     description: DATA.description,
     url: DATA.url,
     siteName: `${DATA.name}`,
-    locale: "en_US",
+    locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "/me.jpg",
+        width: 640,
+        height: 640,
+        alt: DATA.name,
+        type: "image/jpeg",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -47,8 +56,10 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
     card: "summary_large_image",
+    title: `${DATA.name}`,
+    description: DATA.description,
+    images: ["/me.jpg"],
   },
   verification: {
     google: "",
@@ -62,7 +73,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased relative",

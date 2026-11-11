@@ -21,7 +21,7 @@ import { MySQL } from "@/components/ui/svgs/mysql";
 export const DATA = {
   name: "Rigoberto Fernandes",
   initials: "RF",
-  url: "https://dillion.io",
+  url: "https://rigoberto.starfalltech.cloud",
   location: "Mossoró, RN",
   locationLink: "https://www.google.com/maps/place/Mossoró,+RN/",
   description:
